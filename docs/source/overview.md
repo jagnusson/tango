@@ -202,7 +202,7 @@ class ReallyInefficientAdditionStep(Step):
 
 There are a couple of things to note about this step, other than the obvious inefficiencies; the class variables we've defined: {attr}`~tango.step.Step.DETERMINISTIC`, {attr}`~tango.step.Step.CACHEABLE`, and {attr}`~tango.step.Step.FORMAT`.
 
-`DETERMINISTIC = True` tells Tango that, given particular inputs, the output to this step will always be the same every time it is ran, which has implications on caching.
+`DETERMINISTIC = True` tells Tango that, given particular inputs, the output to this step will always be the same every time it is run, which has implications on caching.
 By default Tango assumes steps are non-deterministic, and it will warn you when you try to cache a non-deterministic step.
 
 `CACHEABLE = True` tells Tango that it can cache this step and `FORMAT = JsonFormat()` defines which {class}`~tango.format.Format` Tango will use to serialize the result of the step.
